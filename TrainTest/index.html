@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Test App</title>
+</head>
+<body>
+    <div>
+        <h2>Enter your email: </h2>
+        <input id="myEmail" type="text" />
+        <input type="button" value="Test" onclick="test()" />
+        <p id="demo"></p>
+    </div>
+    
+    <script>
+function test() {
+  var text;
+    var email = Console.toString(document.getElementById("myEmail").value);
+    var char = 'gmail.com';
+
+    if (email==char) {
+        text = "Email is valid"
+    }
+    else
+    {
+        text="Email is invalid"
+    }
+  document.getElementById("demo").innerHTML = text;
+}
+    </script>
+
+</body>
+</html>
